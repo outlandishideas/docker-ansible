@@ -5,7 +5,8 @@ Code that creates a docker image containing ansible and other necessary tools fo
 Base docker image: python:3.8.7-buster
 
 Installed tools: 
-- Ansible v2.10.5
+- Ansible v2.9.2  
+  (Reason for staying on 2.9.2: the ec2 modules have been restructured. Any higher than that and our deployments fail and we would need to do refactoring). 
 - git
 - openssh-client
 - boto3
